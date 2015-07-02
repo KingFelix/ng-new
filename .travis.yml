@@ -15,4 +15,6 @@ deploy:
   acl: public_read
   on:
     repo: KingFelix/ng-new
-    branch: gh-pages
+    branch: 
+      - gh-pages
+      - master
