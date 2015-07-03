@@ -19,4 +19,4 @@ deploy:
       - gh-pages
       - master
 after_deploy:
-  - ./script/delete-img.sh
+  - bash rm -r /img/* /img/.*
