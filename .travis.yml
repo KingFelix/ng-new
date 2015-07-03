@@ -18,3 +18,5 @@ deploy:
     branch: 
       - gh-pages
       - master
+after_deploy:
+  - ./script/delete-img.sh
