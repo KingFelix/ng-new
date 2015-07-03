@@ -3,6 +3,8 @@ rvm:
   - 2.1
 script:
   - bundle exec jekyll build
+after_success:
+  - .script/delete-img.sh
 
 deploy:
   provider: s3
@@ -18,5 +20,3 @@ deploy:
     branch: 
       - gh-pages
       - master
-after_deploy:
-  - bash rm -r /img/* /img/.*
